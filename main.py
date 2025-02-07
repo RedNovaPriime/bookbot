@@ -1,8 +1,9 @@
 def main():
     with open("books/frankenstein.txt") as f:
         file_contents = f.read()
+        print(file_contents)  # Display the contents of the file to the console
+        words = file_contents.split()
+        wordcount = len(words)
+        print(wordcount)
 
-# This ensures `main()` is only called when the script is run directly,
-# and not when imported as a module.
-if __name__ == "__main__":
-    main()
+main()
